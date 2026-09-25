@@ -8,7 +8,7 @@ Topics include measurement plans and tagging (Google Tag Manager, GA4), data on 
 
 | Piece | What it is | Link |
 |---|---|---|
-| **Operating AI** | A practical guide to using AI models, with every claim tagged by strength of evidence and linked to its source | [Read](https://emiliolazarte.com/operating-ai/) · [v2.0, fixed for citation](https://emiliolazarte.com/operating-ai/v2.0/) |
+| **Operating AI** | A practical guide to using AI models, with every claim tagged by strength of evidence and linked to its source | [Read](https://emiliolazarte.com/operating-ai/) · [v2.1, fixed for citation](https://emiliolazarte.com/operating-ai/v2.1/) · [v2.0](https://emiliolazarte.com/operating-ai/v2.0/) |
 
 ## Corrections, questions and ideas
 
@@ -28,6 +28,7 @@ The site is plain HTML, with no build step. Each folder is a page:
 index.html                 home page
 404.html                   "page not found"
 operating-ai/index.html    Operating AI, latest version
+operating-ai/v2.1/         Operating AI, version 2.1, frozen
 operating-ai/v2.0/         Operating AI, version 2.0, frozen
 ```
 
