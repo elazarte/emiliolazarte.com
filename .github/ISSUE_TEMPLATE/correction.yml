@@ -1,0 +1,54 @@
+name: Suggest a correction
+description: Something on the site is wrong, overstated, outdated, or didn't hold up in your work.
+title: "[Correction] "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Corrections are the most useful contribution to this site. A source or a concrete example helps most.
+  - type: input
+    id: page
+    attributes:
+      label: Which page?
+      description: The title or address of the page.
+      placeholder: "e.g. Operating AI, or emiliolazarte.com/operating-ai/"
+    validations:
+      required: true
+  - type: input
+    id: note
+    attributes:
+      label: Section or evidence note (if any)
+      placeholder: "e.g. Section 4, or E11"
+  - type: textarea
+    id: claim
+    attributes:
+      label: The claim
+      description: Quote or describe the sentence you're correcting.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - The content misrepresents its source
+        - Citation details are wrong (title, authors, venue, figure)
+        - It's outdated; newer evidence or product behavior exists
+        - A recommendation didn't hold up in my work
+        - The evidence tag is wrong (e.g. marked Paper but not measured)
+        - A technical step doesn't work (GA4, GTM, BigQuery, Data Studio, Power BI…)
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What's wrong, and what should it say?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Your evidence
+      description: A link to a source, or what you tried and what happened.
